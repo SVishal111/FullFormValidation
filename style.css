@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    font-family: 'Poppins', sans-serif;
+
+    transition: 0.3s linear;
+}
+
+main {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: cyan;
+}
+
+.formContainer {
+    height: 97%;
+    width: 97%;
+
+    background: linear-gradient(to bottom right, #75bbd6, white);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.formContainer form {
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+
+    /* background-color: blue; */
+}
+
+.formPart1 {
+    /* background-color: chartreuse; */
+    height: auto;
+    width: 50%;
+
+    padding: 2px;
+
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.formPart2 {
+    /* background-color: brown; */
+    height: auto;
+    width: 50%;
+
+    padding: 2px;
+
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.formAction {
+    /* padding: 4px 10px; */
+    padding: 0px 10px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    /* background-color: darksalmon; */
+}
+
+.headLabel {
+    margin-bottom: 3px;
+}
+
+.inputRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+
+    /* background-color: chartreuse; */
+}
+
+label {
+    font-weight: 500;
+}
+
+input {
+    padding: 4px;
+    /* font-weight: 400; */
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid black;
+    width: 49%;
+}
+
+small {
+    color: red;
+    font-weight: 500;
+    visibility: hidden;
+}
+
+.genderCheck {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.genderRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+
+#numCode {
+    width: 73px;
+    margin-right: 5px;
+    padding: 4px;
+}
+
+.numArea {
+    justify-content: flex-start;
+}
+
+.qualifCheck {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.qualifRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+}
+
+textarea {
+    padding: 5px;
+    font-weight: 400;
+    /* font-weight: 500; */
+    font-size: 15px;
+    border: 1px solid black;
+}
+
+select {
+    padding: 5px;
+    /* font-weight: 400; */
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid black;
+    width: 49%;
+}
+
+.centered {
+    text-align: center;
+}
+
+.btnContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn {
+    height: 40px;
+    width: 130px;
+    background-color: #75bbd6;
+    /* border: 1px Solid skyblue; */
+    border: none;
+    border-radius: 5px;
+
+    font-size: 15px;
+    font-weight: 500;
+    color: #00315f;
+}
+
+.btn:hover {
+    color: #75bbd6;
+    background-color: #00315f;
+}
+
+.declareText {
+    text-align: center;
+    margin: 5px;
+}
+
+.declareRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 25%;
+}
+
+input[type = checkbox] {
+    width: 15px;
+}
+
+.success input {
+    border: 2px solid greenyellow;
+}
+
+.success select {
+    border: 2px solid greenyellow;
+}
+
+.success textarea {
+    border: 2px solid greenyellow;
+}
+
+.error input {
+    border: 2px solid red;
+}
+
+.error select {
+    border: 2px solid red;
+}
+
+.error textarea {
+    border: 2px solid red;
+}
+
+.error small {
+    visibility: visible;
+}
+
+.single {
+    width: 60%;
+}
+
+input[type=reset] {
+    height: 40px;
+    width: 130px;
+    background-color: #75bbd6;
+    /* border: 1px Solid skyblue; */
+    border: none;
+    border-radius: 5px;
+
+    font-size: 15px;
+    font-weight: 500;
+    color: #00315f;
+}
+
+input[type=reset]:hover {
+    color: #75bbd6;
+    background-color: #00315f;
+}
+
+/* responsive part begins */
+
+
+@media(max-width:1172px) {
+    .declareRow {
+        width: 30%;
+    }
+
+    .qualifRow {
+        width: 25%;
+    }
+
+    .genderRow {
+        width: 30%;
+    }
+
+    .genderCheck {
+        width: 45%;
+    }
+}
+
+@media(max-width:1000px) {
+    .genderCheck {
+        width: 50%;
+    }
+}
+
+@media(max-width:984px) {
+    .declareRow {
+        width: 40%;
+    }
+
+    .qualifCheck {
+        width: 70%;
+    }
+
+    .qualifRow {
+        width: 20%;
+    }
+
+    .genderCheck {
+        width: 60%;
+    }
+
+    .inputRow {
+        width: 100%;
+    }
+}
+
+@media(max-width:800px) {
+    .declareRow {
+        width: 50%;
+    }
+
+    .qualifCheck {
+        width: 80%;
+    }
+
+    .genderRow {
+        width: 20%;
+    }
+
+    .genderCheck {
+        width: 75%;
+    }
+}
+
+@media(max-width:630px) {
+    .declareRow {
+        width: 60%;
+    }
+}
+
+@media(max-width:530px) {
+    .formContainer {
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .formContainer form {
+        flex-direction: column;
+    }
+
+    .formPart1 {
+        width: 100%;
+    }
+
+    .formPart2 {
+        width: 100%;
+    }
+
+    .declareRow {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .qualifRow {
+        width: 15%;
+    }
+
+    .qualifCheck {
+        width: 80%;
+    }
+
+    .genderRow {
+        width: 30%;
+    }
+
+    .genderCheck {
+        width: 60%;
+    }
+}

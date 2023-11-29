@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <header></header> -->
+
+    <main>
+        <div class="formContainer" id="formContainer">
+            <form action="" class="form" id="form">
+                
+                <div class="formPart1" id="formPart1">
+
+                    <div class="formAction">
+                        <label for="" class="headLabel">Name: </label>
+                        <div class="inputRow">
+                            <input type="text" name="" id="fname" placeholder="First Name">
+                            <input type="text" name="" id="lname" placeholder="Last Name (Optional)">
+                        </div>
+                        <small>Error Message</small>
+                    </div>
+
+                    <div class="formAction">
+                        <label for="" class="headLabel">E-Mail Address: </label>
+                        <input type="email" name="" class="single" id="email" placeholder="sample123@gmail.com">
+                        <small>Error Message</small>
+                    </div>
+
+                    <div class="formAction">
+                        <label for="" class="headLabel">Gender: </label> 
+                        <div class="genderCheck">
+                            <div class="genderRow">
+                                <input type="radio" value="Male" name="genderRadio" class="gender" id="gmale"><label for="">Male</label>
+                            </div>
+                            <div class="genderRow">
+                                <input type="radio" value="Female" name="genderRadio" class="gender" id="gfemale"><label for="">Female</label>
+                            </div>
+                            <div class="genderRow">
+                                <input type="radio" value="Others" name="genderRadio" class="gender" id="gothers"><label for="">Others</label>
+                            </div>
+                        </div>
+                        <small>Error Message</small>
+                    </div>
+
+                    <div class="formAction">
+                        <label for="" class="headLabel">Mobile Number: </label>
+                        <div class="inputRow numArea">
+                            <select name="numCode" id="numCode">
+                                <option value="+00">+00</option>
+                                <option value="+90">+90</option>
+                                <option value="+91">+91</option>
+                                <option value="+92">+92</option>
+                                <option value="+93">+93</option>
+                                <option value="+94">+94</option>
+                                <option value="+95">+95</option>
+                            </select>
+                            <input type="number" name="" id="number" placeholder="0000000000">
+                        </div>
+                        <small>Error Message</small>
+                    </div>
+
+                    <div class="formAction">
+                        <label for="" class="headLabel">Date of Birth: </label>
+                        <input type="date" class="single" name="" id="dob">
+                        <small>Error Message</small>
+                    </div>
+
+                    <div class="formAction">
+                        <label for="" class="headLabel">Qualification: </label>
+                        <div class="qualifCheck">
+                            <div class="qualifRow">
+                                <input type="checkbox" name="qualificationCheck" value="SSLC" class="qualification" id="qualifSSLC"><label for="">SSLC</label>
+                            </div>
+                            <div class="qualifRow">
+                                <input type="checkbox" name="qualificationCheck" value="HSC" class="qualification" id="qualifHSC"><label for="">HSC</label>
+                            </div>
+                            <div class="qualifRow">
+                                <input type="checkbox" name="qualificationCheck" value="UG" class="qualification" id="qualifUG"><label for="">UG</label>
+                            </div>
+                            <div class="qualifRow">
+                                <input type="checkbox" name="qualificationCheck" value="PG" class="qualification" id="qualifPG"><label for="">PG</label>
+                            </div>
+                        </div>
+                        <small>Error Message</small>
+                    </div>
+
+                    <div class="formAction">
+                        <label for="" class="headLabel">Address: </label>
+                        <textarea name="" class="single" id="address" cols="30" rows="3" placeholder="Your Address..."></textarea>
+                        <small>Error Message</small>
+                    </div>
+
+                </div>
+
+                <div class="formPart2" id="formPart2">
+                    
+                    <div class="formAction">
+                        <label for="" class="headLabel">State: </label>
+                            <select name="" class="single" id="stateNameOp">
+                                <option value="">Select Your State</option>
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chhatisgarh">Chhatisgarh</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="West Bengal">West Bengal</option>
+                            </select>
+                        <small>Error Message</small>
+                    </div>
+
+                    <div class="formAction">
+                        <label for="" class="headLabel">Mother Tongue: </label>
+                        <input type="text" name="" class="single" id="mTongue" placeholder="Tamil">
+                        <small>Error Message</small>
+                    </div>
+
+                    <div class="formAction">
+                        <label for="" class="headLabel">Parents' Details: </label>
+                        <label for="" class="headLabel"> Father' Name: </label>
+                        <div class="inputRow">
+                            <input type="text" name="" id="fatherFName" placeholder="First Name">
+                            <input type="text" name="" id="fatherLName" placeholder="Last Name (Optional)">
+                        </div>
+                        <small>Error Message</small>
+                    </div>
+
+                    <div class="formAction">
+                        <label for="" class="headLabel"> Mother' Name: </label>
+                        <div class="inputRow">
+                            <input type="text" name="" id="motherFName" placeholder="First Name">
+                            <input type="text" name="" id="motherLName" placeholder="Last Name (Optional)">
+                        </div>
+                        <small>Error Message</small>
+                    </div>
+
+                    <div class="formAction">
+                        <label for="" class="headLabel">Annual Income: </label>
+                        <input type="number" class="single" name="" id="income" placeholder="in INR">
+                        <small>Error Message</small>
+                    </div>
+
+                    <div class="formAction">
+                        <label for="" class="headLabel centered">Declaration: </label>
+                        <p class="declareText">Hereby, I Declare that the Above Mentioned Details are not Forged or Lies and are True to the Best of my Heart</p>
+                        <div class="declareRow">
+                            <input type="checkbox" name="" id="declareCheckBox">
+                            <label for="">I Declare this...</label>
+                        </div>
+                        <small>Error Message</small>
+                    </div>
+
+                    <div class="btnContainer">
+                        <button class="btn" id="btn">Submit</button>
+                        <input type="reset" value="Reset">
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <!-- <footer></footer> -->
+
+
+    <script src="script.js"></script>
+</body>
+</html>
