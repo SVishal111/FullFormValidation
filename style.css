@@ -39,6 +39,10 @@ main {
     /* background-color: blue; */
 }
 
+.heading h1 {
+    text-align: center;
+}
+
 .formPart1 {
     /* background-color: chartreuse; */
     height: auto;
@@ -369,5 +373,29 @@ input[type=reset]:hover {
 
     .genderCheck {
         width: 60%;
+    }
+
+    .single {
+        width: 75%;
+    }
+
+    #declareCheckBox {
+        margin-right: 10px;
+    }
+}
+
+@media(max-width:400px) {
+    .genderCheck {
+        width: 70%;
+    }
+
+    .genderRow {
+        width: 25%;
+    }
+}
+
+@media(max-width:360) {
+    .genderCheck {
+        width: 90%;
     }
 }
