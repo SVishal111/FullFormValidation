@@ -25,6 +25,7 @@ main {
 .formContainer {
     height: 97%;
     width: 97%;
+    max-width: 1440px;
 
     background: linear-gradient(to bottom right, #75bbd6, white);
     border-radius: 20px;
