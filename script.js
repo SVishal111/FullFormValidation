@@ -58,7 +58,6 @@ var qualificationVal = "";
 
 form.addEventListener("submit", function(e) {
     e.preventDefault();
-    checkData();
 
     if(a >= 17) {
         display();
@@ -68,6 +67,10 @@ form.addEventListener("submit", function(e) {
         console.log(a);
         a = 0;
     }
+});
+
+form.addEventListener("change", function() {
+    checkData();
 });
 
 
@@ -119,15 +122,15 @@ function checkData() {
         }
     }
 
-    if(numCodeCD === "+00") {
-        setError2For(numCode, "*Invalid Blank Code or/and Number");
+    if(numCodeCD === "" || numberCD === "") {
+        setError2For(numCode, "*Invalid Blank Code and/or Number");
     } else {
         setSuccess2For(numCode);
     }
 
     // To Check Number
-    if(numberCD === "") {
-        setError2For(number, "*Invalid Blank Number!");
+    if(numberCD === "" || numCodeCD === "") {
+        setError2For(number, "*Invalid Blank Code and/or Number!");
     } else if(numberCD.length < 10 || numberCD.length > 10) {
         setError2For(number, "*Invalid Number Length")
     } else {
